@@ -1,0 +1,16 @@
+C:\projects\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\obj\Debug\ResolveAssemblyReference.cache
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\test.db
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\config.xml
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\JobDetailAnalysis.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\JobDetailAnalysis.pdb
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\nunit.framework.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\nunit.mocks.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\pnunit.framework.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\SysconCommon.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\StringTemplate.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\antlr.runtime.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\SysconCommon.pdb
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\bin\nunit.framework.xml
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\obj\Debug\ResolveAssemblyReference.cache
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\obj\Debug\JobDetailAnalysis.dll
+C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\obj\Debug\JobDetailAnalysis.pdb

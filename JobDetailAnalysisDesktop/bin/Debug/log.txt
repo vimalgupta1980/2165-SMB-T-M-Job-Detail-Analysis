@@ -1,0 +1,773 @@
+11/2/2011 12:35:26 PM - Error updating Jobcst 388313: SMB billing quantity (5.00) does not match original billing quantity (9)
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 962
+11/2/2011 12:35:28 PM - Error updating SMB data: Error Importing Data.
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 997
+11/3/2011 12:21:26 PM - Error updating Jobcst 388313: SMB billing quantity (5.00) does not match original billing quantity (9)
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 974
+11/3/2011 12:21:28 PM - Error updating SMB data: Error Importing Data.
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 1009
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kmffmqinicbrcgflokufvqtvg.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jwmuhkcdketjo.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ibvmvytjncetjqmwsstwxlniektys.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\tlrebjwpfomvqblhcuslhncoyw.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\llakhopfelpmlpds.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\empbcurrunnwfwthjwxgraljbqop.dbf]
+12/8/2011 12:12:53 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\wquwwfmxarkhqsskptbkvtcgctlc.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ebyrhvhucnhpbrky.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\esrushbnkaygwu.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xwcxjcsoicbrjvdmavt.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\odjlcqhqvqhxbtrmtodnlsu.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\faikspgudgxwulaqwa.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\owswywoqhlxgtnenefceg.dbf]
+12/8/2011 12:41:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\siyjoqmclytywenwpeyy.dbf]
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select recnum from cstcde order by recnum
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 5
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 6
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 7
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 8
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 9
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 13
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 14
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 15
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 16
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 17
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 79
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 89
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 99
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 900
+12/8/2011 1:08:51 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.01
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.015
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.02
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.025
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.026
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.03
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.031
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.04
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.041
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.045
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.046
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.05
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.051
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.06
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.061
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.065
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.067
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.068
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.069
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.07
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.08
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.09
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.1
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.11
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.12
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.13
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.14
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.15
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.21
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.211
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.212
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.213
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.214
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.215
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.216
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.217
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.218
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.22
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.221
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.222
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.223
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.224
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.225
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.226
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.227
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.228
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.229
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.23
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.231
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.232
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.233
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.234
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.235
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.236
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.237
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.238
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.239
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.24
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.241
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.242
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.243
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.244
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.245
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.246
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.25
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.251
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.252
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.253
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.254
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.255
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.256
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.257
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.258
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.26
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.261
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.262
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.263
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.264
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.265
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.266
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.267
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.268
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.3
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.301
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.302
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.303
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.304
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.305
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.306
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.307
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.308
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.31
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.311
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.312
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.313
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.314
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.315
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.316
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.317
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.318
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.32
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.321
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.322
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.323
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.324
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.325
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.326
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.327
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.328
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.33
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.331
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.332
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.333
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.334
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.335
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.336
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.337
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.338
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.34
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.341
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.342
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.343
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.344
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.345
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.346
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.347
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.348
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.35
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.351
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.352
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.353
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.354
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.355
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.356
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.357
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.358
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.36
+12/8/2011 1:08:52 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.361
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.362
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.363
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.364
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.365
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.366
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.367
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.368
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.37
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.371
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.372
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.373
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.374
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.375
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.376
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.377
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.378
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.41
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.411
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.412
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.413
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.414
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.415
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.416
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.417
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.418
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.42
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.421
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.422
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.423
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.424
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.425
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.426
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.427
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.428
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.429
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.43
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.431
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.432
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.433
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.434
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.435
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.436
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.437
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.438
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.439
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.44
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.441
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.442
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.443
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.444
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.445
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.446
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.45
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.451
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.452
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.453
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.454
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.455
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.456
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.457
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.458
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.46
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.461
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.462
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.463
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.464
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.465
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.466
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.467
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.468
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.5
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.501
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.502
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.503
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.504
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.505
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.506
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.507
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.508
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.51
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.511
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.512
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.513
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.514
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.515
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.516
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.517
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.518
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.52
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.521
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.522
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.523
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.524
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.525
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.526
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.527
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.528
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.53
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.531
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.532
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.533
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.534
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.535
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.536
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.537
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.538
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.54
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.541
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.542
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.543
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.544
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.545
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.546
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.547
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.548
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.55
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.551
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.552
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.553
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.554
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.555
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.556
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.557
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.558
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.56
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.561
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.562
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.563
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.564
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.565
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.566
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.567
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.568
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.57
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.571
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.572
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.573
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.574
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.575
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.576
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.577
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1000.578
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1005
+12/8/2011 1:08:53 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1100
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1200
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1200.01
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 1999
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.01
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.011
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.012
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.02
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.021
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.022
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.023
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.024
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.025
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.026
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.027
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.029
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.03
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.031
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.032
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.04
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.05
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.06
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.061
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.062
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.065
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.066
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.067
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.069
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.07
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.071
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.072
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.08
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.081
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.082
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.09
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.091
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.092
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.1
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.101
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.102
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.11
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.111
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.112
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.115
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.12
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.121
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.122
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.123
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.13
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.135
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.14
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.15
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.22
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.23
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.235
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.26
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.52
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.521
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.53
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.531
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2000.561
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2005
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2010
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2020
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2025
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2030
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2040
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2099
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.01
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.011
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.012
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.015
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.02
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.021
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.022
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.023
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.025
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.026
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.03
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.031
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.032
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.033
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.034
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.04
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.041
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.05
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.052
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.055
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.06
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.061
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.062
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.063
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.064
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.065
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.066
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.067
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.068
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.069
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.07
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.073
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.075
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.08
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.081
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.082
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.09
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.1
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.101
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.102
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.103
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.104
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.11
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.111
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.112
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.113
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.114
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.115
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.12
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.123
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.125
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.13
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.131
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.132
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.135
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.14
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.141
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.142
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.15
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.151
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.152
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.166
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.167
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.168
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.2
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.23
+12/8/2011 1:08:54 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.25
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.255
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.26
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.265
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2500.27
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2505
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2510
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2520
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2530
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2540
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2550
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2560
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2570
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2580
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2590
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2600
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2610
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2620
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2630
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2640
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2650
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2660
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2680
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2690
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 2699
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.01
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.012
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.02
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.021
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.022
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.023
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.024
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.025
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.026
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.03
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.031
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.032
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.033
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.05
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.06
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.061
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.065
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.07
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.071
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.072
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.08
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.085
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.087
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.09
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.091
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.092
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.095
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.1
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.101
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.102
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.11
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.112
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.12
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.13
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.135
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.137
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.14
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.15
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.16
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.17
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.171
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.22
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.221
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.234
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.235
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.27
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.271
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.274
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3000.275
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3005
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3010
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3020
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3030
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3040
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3050
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3100
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3120
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3140
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3160
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3180
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3199
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3200
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3205
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3210
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.01
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.02
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.03
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.04
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.05
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.06
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.065
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.066
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.07
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.08
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.09
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.1
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.11
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.12
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3220.13
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3225
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.01
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.02
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.025
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.03
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.04
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.05
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.06
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.065
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.07
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.08
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.09
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.1
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.11
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.12
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.13
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.14
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.15
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.16
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.17
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3230.53
+12/8/2011 1:08:55 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3235
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.01
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.02
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.021
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.03
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.031
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.035
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.036
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.06
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.061
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.201
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.202
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.203
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.204
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.205
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.206
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.207
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 3500.208
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.02
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.021
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.03
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.031
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.06
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.061
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.07
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.071
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.08
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.081
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.09
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.091
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.1
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.101
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.11
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.111
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.12
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4000.121
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 4500
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 6000
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 9999
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10100
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10200
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10300
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10400
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 10500
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11000
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11010
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11020
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11030
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11040
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11050
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11060
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11070
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11080
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11090
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11100
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11110
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11120
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11130
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11140
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11145
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11150
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11160
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11170
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11180
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11190
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11200
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11210
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11220
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11230
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11240
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11250
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11260
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11270
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11280
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11285
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11290
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11300
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11310
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11320
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 11330
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12010
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12020
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12030
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12500
+12/8/2011 1:08:56 PM - 12/8/2011 12:00:00 AM: select cdenme from cstcde where recnum = 12510
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\wjxgquuhybrbdubln.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\iekyotskpcmbebvkcyjskjylmdit.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\hoejxsewsk.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\rfluthobchvfvslktnddvywvaexbn.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\dfjorsekchg.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\nfirtuhrvexbolwveoiw.dbf]
+12/8/2011 1:11:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\icrgtcnfvhwguwb.dbf]
+12/13/2011 2:06:58 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\mtackprotkbetpgi.dbf]
+12/13/2011 2:08:07 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\icitasdrtxsbj.dbf]
+12/13/2011 2:08:41 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\dtyufbjkefuvrgcbyfp.dbf]
+12/13/2011 2:08:41 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ijaawymgif.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jdufdsfutfwsdkqbsac.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\rkoeqlqpqgcrurnusnjgpialvrrx.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ymqpunrctrkgjfgtuualcmjx.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\lidhvqwtmdshwqdos.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\mwagoaivrsifadjjp.dbf]
+12/13/2011 2:08:43 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\pciffjigjtcvddxsljb.dbf]
+12/13/2011 2:19:42 PM - Error updating Jobcst 405383: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(String format, Object[] args)
+   at SysconCommon.Common.Environment.Connections.ExecuteNonQuery(IDbConnection con, OleDbTransaction trans, String sqlfmt, Object[] args) in C:\!dev\dotnetlibs\SysconCommon\Common\Connections.cs:line 182
+   at SysconCommon.Common.Environment.Connections.ExecuteNonQuery(IDbConnection con, String sqlfmt, Object[] args) in C:\!dev\dotnetlibs\SysconCommon\Common\Connections.cs:line 188
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 962
+12/13/2011 2:19:46 PM - Error updating SMB data: Error Importing Data.
+   at JobDetailAnalysisDesktop.JobDetailAnalysis.import_file(String filename) in C:\!dev\2165 SMB T&M Job Detail Analysis\JobDetailAnalysisDesktop\JobDetailAnalysis.cs:line 1043
+12/13/2011 2:53:46 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kjxfjyxlcdkueiqmaqagwxiamljda.dbf]
+12/14/2011 8:44:08 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\yomtifdlfwwmupvjnjqqsbfmwtgx.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\nqnsqulcrsjokcg.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\twevtjijmisexjj.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\rdnrhjkwcrkohskcefbvk.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\wejdaorpvl.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\pikauhglcqolbdocjirykq.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kbuewcxbjklnemtt.dbf]
+12/14/2011 8:45:03 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\fwasacpsckcdljpasksriekgae.dbf]
+12/14/2011 8:46:43 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jspyprmaabfalsnkilsm.dbf]
+12/14/2011 8:46:49 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\cuidibhivgfbkrtiivsox.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\pjryfrtwoqvwg.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\wrowjxmfdl.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xwpjavrjvdfsesr.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kvlndmlerrwgysfbqmvt.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\mfmeqqxlcleeywppxrgdppkppt.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ocbcbaflqthbncwx.dbf]
+12/14/2011 8:47:05 AM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\auxnnqlqdyvprknexbpsguqjbl.dbf]
+12/14/2011 3:42:01 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xypysaslqaxbpucsqvhtbje.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\qgvisseejwbm.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jlkawefoonxwocrxafrkutoeivr.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kipmvwonpmjnunbgpduvqtjwlf.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ndlepgmavd.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\vwkauvdqmicnknofconu.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\gklfbcgvhmb.dbf]
+12/14/2011 3:42:21 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\nccdhfcnrymvwqxhdha.dbf]
+12/14/2011 3:42:44 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\dtxslhohomrgqcuvdwrbcaab.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ehcgbtawagvfqwk.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xeulkrxoqdgrlcrueegexlqj.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\aulheabfvumdlakvihghl.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kmpcfocficttonkwju.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ssldmyybsmfbqjjugurnwfprst.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\olybsorunc.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jwfkpsflohjcoysbsly.dbf]
+12/14/2011 3:43:14 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\jigsjqbgxgkgohwspmamyumipcfa.dbf]
+12/14/2011 3:43:45 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ylrikjfelpnys.dbf]
+12/14/2011 3:44:00 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ysjaxaenisitchakeuchdaeydkrw.dbf]
+12/14/2011 3:46:08 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\csujphrbegsbfuiko.dbf]
+12/14/2011 3:46:08 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\geiwtrwmvscgcmwpulod.dbf]
+12/14/2011 3:46:08 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\srsmylkjswi.dbf]
+12/14/2011 3:46:08 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\htwwnqghhvrrtsnkcsfqklwp.dbf]
+12/14/2011 3:46:09 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\nmvtdlalayniyowcoh.dbf]
+12/14/2011 3:46:09 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ddstglpjsuqungonngd.dbf]
+12/14/2011 3:46:09 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kgdsbuxxla.dbf]
+12/14/2011 3:49:05 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\nxlvxnouoldndaxyk.dbf]
+12/14/2011 4:00:48 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\cdosnqtvunamjonjnf.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ipqbghisvqtyofnfixhj.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\tcmtgandjkeldttggxaxdwvulj.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\clhvyellmgaciaxxasdlwevjotm.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\mjswwvauostdbubgs.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ejboaqoldmnhnix.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\uvlqhlxtowppyepytcgey.dbf]
+12/14/2011 4:01:24 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\scyiwqhulwwdppddicla.dbf]
+12/14/2011 4:02:16 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\bsgwjpcmmuhuomjrhwmrestyyrxk.dbf]
+12/14/2011 4:05:56 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\tqqivvaigtw.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ajcpnbaytriqhwnludkl.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\uijgqiwcixxcdretottihkml.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\fqxtpqfoxpcrncuipis.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\cruaeeugloctbspsjkwnjwfsrfrsq.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\vivlryavlxompikbjoyrg.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\odlwlcfgnnqburcitdekinrnlftwa.dbf]
+12/14/2011 4:06:32 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\htdvbgpmlikucnyvrivfausrsh.dbf]
+12/14/2011 4:09:47 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\kwomrgnjttcu.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\bqgkludokcv.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xgstrjrcsyupaucdvggily.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\ayfmcgqajrbq.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\xrxaslyqtwxagnxtcnb.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\iyydwatrmtpfojbayb.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\bbtsapvlphrykckxkjicnbtp.dbf]
+12/14/2011 4:10:22 PM - Cleanup Error: Could not delete [C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\\eagvchuyyncwljvhcjlkkl.dbf]

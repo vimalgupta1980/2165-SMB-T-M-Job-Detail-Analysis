@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\projects\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysis\bin\JobDetailAnalysis.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-09-20" time="10:36:02">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.4952" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\projects\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysis\bin" machine-name="BNIEMCZYK-N" user="bniemczyk" user-domain="SYSCON-INC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\projects\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysis\bin\JobDetailAnalysis.dll" executed="True" result="Failure" success="False" time="0.450" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="JobDetailAnalysis" executed="True" result="Failure" success="False" time="0.432" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Tests" executed="True" result="Failure" success="False" time="0.337" asserts="0">
+            <results>
+              <test-case name="JobDetailAnalysis.Tests.TestSqlStatementsDeps" executed="True" result="Error" success="False" time="0.314" asserts="0">
+                <failure>
+                  <message><![CDATA[System.Xml.XPath.XPathException : Expression must evaluate to a node-set.]]></message>
+                  <stack-trace><![CDATA[at MS.Internal.Xml.XPath.XPathParser.ParseNodeTest(AstNode qyInput, AxisType axisType, XPathNodeType nodeType)
+at MS.Internal.Xml.XPath.XPathParser.ParseStep(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseRelativeLocationPath(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseRelativeLocationPath(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseLocationPath(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseUnionExpr(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseMultiplicativeExpr(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseRelationalExpr(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseEqualityExpr(AstNode qyInput)
+at MS.Internal.Xml.XPath.XPathParser.ParseOrExpr(AstNode qyInput)
+at MS.Internal.Xml.XPath.QueryBuilder.Build(String query, Boolean allowVar, Boolean allowKey)
+at System.Xml.XPath.XPathExpression.Compile(String xpath, IXmlNamespaceResolver nsResolver)
+at System.Xml.XPath.XPathNavigator.Select(String xpath)
+at System.Xml.XmlNode.SelectSingleNode(String xpath)
+at SysconCommon.Common.Environment.Env.GetConfigXmlNode(String name) in C:\projects\dotnetlibs\SysconCommon\Common\Environment.cs:line 410
+at SysconCommon.Common.Environment.Env.<get_SQLGraph>b__10(String n) in C:\projects\dotnetlibs\SysconCommon\Common\Environment.cs:line 436
+at SysconCommon.Algebras.Graphs.DirectionalGraph`1.isAcylic(T node, Dictionary`2 seen) in C:\projects\dotnetlibs\SysconCommon\Algebras\Graphs\GraphStructures.cs:line 28
+at SysconCommon.Algebras.Graphs.DirectionalGraph`1.isAcylic(T node, Dictionary`2 seen) in C:\projects\dotnetlibs\SysconCommon\Algebras\Graphs\GraphStructures.cs:line 30
+at SysconCommon.Algebras.Graphs.DirectionalGraph`1.get_IsAcylic() in C:\projects\dotnetlibs\SysconCommon\Algebras\Graphs\GraphStructures.cs:line 43
+at SysconCommon.Common.Environment.Env.get_SQLGraph() in C:\projects\dotnetlibs\SysconCommon\Common\Environment.cs:line 445
+at JobDetailAnalysis.Tests.TestSqlStatementsDeps() in C:\projects\2165 SMB T&M Job Detail Analysis\JobDetailAnalysis\Tests.cs:line 21
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

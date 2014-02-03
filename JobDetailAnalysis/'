@@ -1,0 +1,183 @@
+<configuration>
+  <dsnname>APS</dsnname>
+
+  <userdefined>
+    <!-- 
+    there is some trickery going on here
+    any list of integers that are comma seperated are assumed
+    to be just that, so if it should be a string, quote it correctly.
+    The reason for this is because of the lack of types in sqlite
+    -->
+    <nonbillable>
+            1,79,89,99,900
+    </nonbillable>
+
+    <startperiod>
+            1
+    </startperiod>
+
+    <endperiod>
+            12
+    </endperiod>
+
+    <datadir>
+    <![CDATA[
+        c:\mb7\aps\
+    ]]></datadir>
+    <joblist>
+      <!-- list of jobs we are interested in -->
+            26329
+    </joblist>
+
+    <jobtypelist>
+            1,2
+    </jobtypelist>
+
+    <statuslist>
+            4
+    </statuslist>
+
+    <tmtable>
+      'YES'
+    </tmtable>
+
+  </userdefined>
+  <sql>
+    <tmemln><![CDATA[
+          select * from tmemln
+          ]]></tmemln>
+
+    <actrec>select * from actrec</actrec>
+
+    <jobtyp>select * from jobtyp</jobtyp>
+
+    <jobcst>select * from jobcst</jobcst>
+
+    <acrinv>select * from acrinv</acrinv>
+
+    <timmat>select * from timmat</timmat>
+
+    <tmrates dependancies="timmat">
+          select * from timmat where recnum in ({input:joblist})
+    </tmrates>
+
+    <jobselection dependancies="actrec">
+    <![CDATA[
+            select recnum from actrec
+            where recnum in ({input:joblist})
+            -- and status in ({input:statuslist})
+    ]]>
+    </jobselection>
+
+
+    <joblist dependancies="actrec,jobtyp,jobselection">
+      <![CDATA[
+            select ar.recnum as jobnum, ar.lotprm as estgp, ar.sprvsr, jt.recnum as jobtyp, jt.typnme,
+            case when upper(substr(jt.typnme,1,2)) = 'TM' then 'TM' else 'OTHER' end as jobtype,
+            0.0 as ttlabhrs, 0.0 as actualar, 0.0 as bill01,
+            0000000.00 as ttllabhrs, 00000000.00 as actualAR, 000000000.00 as bill01, 
+            000000000.00 as cost01, 000000000.00 as nobill01, 000000000.00 as bill01cp, 
+            000000000.00 as cost01cp, 000000000.00 as nobill01cp, 
+            000000000.00 as bill02, 000000000.00 as cost02, 
+            000000000.00 as bill03, 000000000.00 as cost03, 
+            000000000.00 as estbilling, 000000000.00 as ttlcst, 
+            {input:tmtable} as tmtable, 0000000000 as count03, 0000000000 as count03ar, 
+            000000000.00 as hours01, 000000000.00 as hours02, 000000000.00 as hours03, 
+            000000000.00 as hours03b, 000000000.00 as hours04 
+            from actrec ar
+            join jobtyp jt on ar.jobtyp = jt.recnum
+            join jobselection js on ar.recnum = js.recnum
+            ]]>
+    </joblist>
+
+    <jobhours dependancies="joblist,jobcst">
+    <![CDATA[
+        select joblist.jobnum, 
+            (select SUM(csthrs) from jobcst where jobcst.jobnum = joblist.jobnum and jobcst.status <> 2 AND cast(jobcst.actprd as int) <= {input:endperiod}) as ttlhours
+            from joblist
+    ]]>
+    </jobhours>
+
+    <ARbilling dependancies="joblist, acrinv">
+    <![CDATA[
+            select jl.jobnum, sum(ai.invttl) as totalAR
+            from joblist jl
+            left join acrinv ai on ai.jobnum = jl.jobnum
+            where cast(ai.status as int) < 5 and cast(ai.actper as int) >= {input:startperiod} and cast(ai.actper as int) <= {input:endperiod}
+            group by jl.jobnum
+    ]]>
+    </ARbilling>
+
+    <!-- begin port of estunbilled, this is tricky because it was written to work on one job number at a time in foxpro and it only applies to jobtype "TM" -->
+
+    <allcosts dependancies="jobcst">
+    <![CDATA[
+            select * from jobcst where jobnum in ({input:joblist}) and cast(status as int) != 2 and cast(actprd as int) <= {input:endperiod}
+            ]]>
+    </allcosts>
+
+    <costs dependancies="allcosts, tmemln, tmrates">
+    <![CDATA[
+            select ac.*, tm.rate01, tm.rate02, tm.rate03, tm.minhrs, 0.0 as markup, 0.0 as estbilling,
+            tr.emptbl, tr.eqptbl, 0 as eqptype
+            from allcosts ac
+            left join tmemln tm on ac.cstcde = tm.cstcde
+            left join tmrates tr on tm.recnum = tr.emptbl
+    ]]>
+    </costs>
+
+    <eqpmnt>select * from eqpmnt</eqpmnt>
+
+    <!--
+    <costs_update1 dependancies="costs, tmemln">
+    <![CDATA[
+        update costs set
+        rate01 = tmemln.rate01, rate02 = tmemln.rate02, rate03 = tmemln.rate03,
+        minhrs = tmemln.minhrs
+        where emptbl in (select recnum from tmemln) and cstcde in (select cstcde from tmemln) and empnum in (select empnum from tmemln)
+    ]]>
+    </costs_update1>
+    -->
+
+    <costs_update1 dependancies="costs, tmemln">
+    <![CDATA[
+        update costs
+            set rate01 = (select rate01 from tmemln where emptbl in (select recnum from tmemln) and cstcde in (select cstcde from tmemln) and empnum in (select empnum from tmemln))
+            ,rate02 = (select rate02 from tmemln where emptbl in (select recnum from tmemln) and cstcde in (select cstcde from tmemln) and empnum in (select empnum from tmemln))
+            ,rate03 = (select rate03 from tmemln where emptbl in (select recnum from tmemln) and cstcde in (select cstcde from tmemln) and empnum in (select empnum from tmemln))
+            ,minhrs = (select minhrs from tmemln where emptbl in (select recnum from tmemln) and cstcde in (select cstcde from tmemln) and empnum in (select empnum from tmemln))
+    ]]>
+    </costs_update1>
+
+    <costsummary dependancies="costs_update1">
+    <![CDATA[
+            SELECT jobnum, 
+                SUM(case when bllsts=1 then estbilling else 0 end) as bill01, 
+                SUM(case when bllsts=1 then cstamt else 0 end) as cost01, 
+                SUM(case when bllsts=4 then cstamt else 0 end) as nobill01, 
+                SUM(case when bllsts=1 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then estbilling else 0 end) as bill01cp, 
+                SUM(case when bllsts=1 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then cstamt else 0 end) as cost01cp, 
+                SUM(case when bllsts=4 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then cstamt else 0 end) as nobill01cp, 
+                SUM(case when bllsts=2 then estbilling else 0 end) as bill02, 
+                SUM(case when bllsts=2 then cstamt else 0 end) as cost02, 
+                SUM(case when bllsts=3 then estbilling else 0 end) as bill03, 
+                SUM(case when bllsts=3 then cstamt else 0 end) as cost03, 
+                SUM(estbilling) as estbilling, 
+                SUM(cstamt) as cstamt, '{input:tmtable}' as tmtable,
+                sum(case when bllsts=3 then 1 else 0 end) as count03, 
+                sum(case when acrinv > 0 then  1 else 0 end) as count03ar, 
+                SUM(case when bllsts=1 then csthrs else 0 end) as hours01, 
+                SUM(case when bllsts=2 then csthrs else 0 end) as hours02, 
+                SUM(case when bllsts=3 then csthrs else 0 end) as hours03, 
+                SUM(case when bllsts=3 then blgqty else 0 end) as hours03b, 
+                SUM(case when bllsts=4 then csthrs else 0 end) as hours04 
+                FROM costs GROUP BY jobnum
+    ]]>
+    </costsummary>
+
+    
+  </sql>
+  <debug>True</debug>
+  <logfile>log.txt</logfile>
+  <sqlitefile>test.db</sqlitefile>
+</configuration>

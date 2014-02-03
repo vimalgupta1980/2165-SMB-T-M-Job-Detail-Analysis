@@ -1,0 +1,244 @@
+<configuration>
+  <dsnname>APS</dsnname>
+
+  <userdefined>
+    
+    <nonbillable caption="Non Billable Cost Codes" src="select distinct cstcde from costs" type="hidden">
+            1,79,89,99,900
+    </nonbillable>
+    
+    <startperiod caption="Start Period" type="choice" choices="1,2,3,4,5,6,7,8,9,10,11,12">
+            1
+    </startperiod>
+
+    <endperiod caption="End Period" type="choice" choices="1,2,3,4,5,6,7,8,9,10,11,12">
+            12
+    </endperiod>
+
+    <datadir type="hidden">
+    <![CDATA[
+        c:\mb7\aps\
+    ]]></datadir>
+    
+    <joblist caption="Choose Job" sql="select recnum as value, (recnum || ' - ' || jobnme) as label from actrec order by cast(recnum as int)">
+        26329
+    </joblist>
+
+    <jobtypelist type="multichoice" caption="Job Types" sql="select (recnum || ' - ' || jobtyp) as label from jobtyp">
+    </jobtypelist>
+
+    <statuslist type="multichoice" caption="Status" choices="1,2,3,4,5,6">
+            4
+    </statuslist>
+
+    <tmtable caption="TM Table" choices="YES,NO" type="hidden">
+      YES
+    </tmtable>
+
+  </userdefined>
+  
+  <sql>
+    <tmemln><![CDATA[
+          select * from tmemln
+          ]]></tmemln>
+
+    <actrec>select * from actrec</actrec>
+
+    <jobtyp>select * from jobtyp</jobtyp>
+
+    <jobcst>select * from jobcst</jobcst>
+
+    <acrinv>select * from acrinv</acrinv>
+
+    <timmat>select * from timmat</timmat>
+
+    <eqptyp>select * from eqptyp</eqptyp>
+
+    <eqpmnt>select * from eqpmnt</eqpmnt>
+
+    <tmeqln>select * from tmeqln</tmeqln>
+
+    <tmrates dependancies="timmat">
+          select * from timmat where recnum in ({input:joblist})
+    </tmrates>
+
+    <jobselection dependancies="actrec">
+    <![CDATA[
+            select recnum from actrec
+            where recnum in ({input:joblist})
+            and status in ({input:statuslist})
+    ]]>
+    </jobselection>
+
+
+    <joblist dependancies="actrec,jobtyp,jobselection">
+      <![CDATA[
+            select ar.recnum as jobnum, ar.lotprm as estgp, ar.sprvsr, jt.recnum as jobtyp, jt.typnme,
+            case when upper(substr(jt.typnme,1,2)) = 'TM' then 'TM' else 'OTHER' end as jobtype,
+            0.0 as ttlabhrs, 0.0 as actualar, 0.0 as bill01,
+            0000000.00 as ttllabhrs, 00000000.00 as actualAR, 000000000.00 as bill01, 
+            000000000.00 as cost01, 000000000.00 as nobill01, 000000000.00 as bill01cp, 
+            000000000.00 as cost01cp, 000000000.00 as nobill01cp, 
+            000000000.00 as bill02, 000000000.00 as cost02, 
+            000000000.00 as bill03, 000000000.00 as cost03, 
+            000000000.00 as estbilling, 000000000.00 as ttlcst, 
+            '{input:tmtable}' as tmtable, 0000000000 as count03, 0000000000 as count03ar, 
+            000000000.00 as hours01, 000000000.00 as hours02, 000000000.00 as hours03, 
+            000000000.00 as hours03b, 000000000.00 as hours04 
+            from actrec ar
+            join jobtyp jt on ar.jobtyp = jt.recnum
+            join jobselection js on ar.recnum = js.recnum
+            ]]>
+    </joblist>
+
+    <jobhours dependancies="joblist,jobcst">
+    <![CDATA[
+        select joblist.jobnum, 
+            (select SUM(csthrs) from jobcst where jobcst.jobnum = joblist.jobnum and jobcst.status <> 2 AND cast(jobcst.actprd as int) <= {input:endperiod}) as ttlhours
+            from joblist
+    ]]>
+    </jobhours>
+
+    <ARbilling dependancies="joblist,acrinv">
+    <![CDATA[
+            select jl.jobnum, sum(ai.invttl) as totalAR
+            from joblist jl
+            left join acrinv ai on ai.jobnum = jl.jobnum
+            where cast(ai.status as int) < 5 and cast(ai.actper as int) >= {input:startperiod} and cast(ai.actper as int) <= {input:endperiod}
+            group by jl.jobnum
+    ]]>
+    </ARbilling>
+
+    <!-- begin port of estunbilled, this is tricky because it was written to work on one job number at a time in foxpro and it only applies to jobtype "TM" -->
+
+    <allcosts dependancies="jobcst">
+    <![CDATA[
+            select * from jobcst where jobnum in ({input:joblist}) and cast(status as int) != 2 and cast(actprd as int) <= {input:endperiod}
+            ]]>
+    </allcosts>
+
+    <costs dependancies="allcosts,tmemln,tmrates">
+    <![CDATA[
+        select ac.*, tm.rate01 as rate01, tm.rate02 as rate02, tm.rate03 as rate03, tm.minhrs as minhrs, 0.0 as markup, 0.0 as estbilling, tr.emptbl as emptbl, tr.eqptbl as eqptbl, 0 as eqptype
+            from allcosts ac
+            left outer join tmemln tm on ac.cstcde = tm.cstcde and ac.csttyp = '2' and tm.empnum  = '0'
+            left outer join tmrates tr on tm.recnum = tr.emptbl and tm.empnum = '0' and ac.csttyp = '2'
+            where tr.emptbl is not null or tm.rate01 is null
+    ]]>
+    </costs>
+
+    <costs_idx dependancies="costs">
+    create unique index if not exists costs_idx on costs (recnum)
+    </costs_idx>
+
+    <costs_update1 dependancies="costs_idx,tmemln">
+    <![CDATA[
+       insert or replace into costs
+       select c.recnum, c.wrkord, c.jobnum, c.trnnum, c.dscrpt, c.trndte, c.entdte, c.actprd, c.srcnum, c.status,
+       c.bllsts, c.phsnum, c.cstcde, c.csttyp, c.vndnum, c.eqpnum, c.empnum, c.payrec, c.paytyp, c.csthrs, c.cstamt, 
+       c.blgqty, c.blgamt, c.pieces, c.lgrrec, c.blgunt, c.eqptyp, c.eqpunt, c.eqpqty, c.grswge, c.ovrrde, c.blgttl,
+       c.active, c.acrinv, c.shwamt, c.ovhamt, c.pftamt, c.taxabl, c.usrnme, c.ntetxt,
+       tm.rate01 as rate01, tm.rate02 as rate02, tm.rate03 as rate03, tm.minhrs as minhrs,
+       c.markup, c.estbilling, c.emptbl, c.eqptbl, c.eqptype
+       from tmemln tm
+       left join costs c on c.emptbl = tm.recnum and c.cstcde = tm.cstcde and c.empnum = tm.empnum
+       where tm.empnum != '0' and c.recnum is not null
+    ]]>
+    </costs_update1>
+
+    <costs_update2 dependancies="eqpmnt,costs_update1">
+    <![CDATA[
+    insert or replace into costs
+    select c.recnum, c.wrkord, c.jobnum, c.trnnum, c.dscrpt, c.trndte, c.entdte, c.actprd, c.srcnum, c.status,
+       c.bllsts, c.phsnum, c.cstcde, c.csttyp, c.vndnum, c.eqpnum, c.empnum, c.payrec, c.paytyp, c.csthrs, c.cstamt, 
+       c.blgqty, c.blgamt, c.pieces, c.lgrrec, c.blgunt, c.eqptyp, c.eqpunt, c.eqpqty, c.grswge, c.ovrrde, c.blgttl,
+       c.active, c.acrinv, c.shwamt, c.ovhamt, c.pftamt, c.taxabl, c.usrnme, c.ntetxt,
+       c.rate01 as rate01, c.rate02 as rate02, c.rate03 as rate03, c.minhrs as minhrs,
+       c.markup, c.estbilling, c.emptbl, c.eqptbl, 
+       case when e.eqptyp is null then 0 else e.eqptyp end as eqtype
+       from costs c
+       left join eqpmnt e on c.eqpnum = e.recnum
+    ]]>
+    </costs_update2>
+
+    <costs_update3 dependancies="tmeqln,costs_update2">
+    insert or replace into costs
+        select c.recnum, c.wrkord, c.jobnum, c.trnnum, c.dscrpt, c.trndte, c.entdte, c.actprd, c.srcnum, c.status,
+        c.bllsts, c.phsnum, c.cstcde, c.csttyp, c.vndnum, c.eqpnum, c.empnum, c.payrec, c.paytyp, c.csthrs, c.cstamt, 
+        c.blgqty, c.blgamt, c.pieces, c.lgrrec, c.blgunt, c.eqptyp, c.eqpunt, c.eqpqty, c.grswge, c.ovrrde, c.blgttl,
+        c.active, c.acrinv, c.shwamt, c.ovhamt, c.pftamt, c.taxabl, c.usrnme, c.ntetxt,
+        t.oprrte as rate01, t.stdrte as rate02, t.idlrte as rate03, t.minhrs as minhrs,
+        c.markup, c.estbilling, c.emptbl, c.eqptbl, c.eqptype
+        from costs c
+        left join tmeqln t on c.eqptbl = t.recnum and c.eqptype = t.eqptyp and t.eqpnum = 0
+        where  c.eqptype != 0
+    </costs_update3>
+
+    <costs_update4 dependancies="tmeqln,costs_update3">
+    insert or replace into costs
+        select c.recnum, c.wrkord, c.jobnum, c.trnnum, c.dscrpt, c.trndte, c.entdte, c.actprd, c.srcnum, c.status,
+        c.bllsts, c.phsnum, c.cstcde, c.csttyp, c.vndnum, c.eqpnum, c.empnum, c.payrec, c.paytyp, c.csthrs, c.cstamt, 
+        c.blgqty, c.blgamt, c.pieces, c.lgrrec, c.blgunt, c.eqptyp, c.eqpunt, c.eqpqty, c.grswge, c.ovrrde, c.blgttl,
+        c.active, c.acrinv, c.shwamt, c.ovhamt, c.pftamt, c.taxabl, c.usrnme, c.ntetxt,
+        t.oprrte as rate01, t.stdrte as rate02, t.idlrte as rate03, t.minhrs as minhrs,
+        c.markup, c.estbilling, c.emptbl, c.eqptbl, c.eqptype
+        from costs c
+        left join tmeqln t on c.eqptbl = t.recnum and c.eqptype = t.eqptyp and c.eqpnum = t.eqpnum
+        where  c.eqptype != 0
+    </costs_update4>
+
+    <costs_update5 dependancies="tmrates,costs_update4">
+      insert or replace into costs
+      select c.recnum, c.wrkord, c.jobnum, c.trnnum, c.dscrpt, c.trndte, c.entdte, c.actprd, c.srcnum, c.status,
+      c.bllsts, c.phsnum, c.cstcde, c.csttyp, c.vndnum, c.eqpnum, c.empnum, c.payrec, c.paytyp, c.csthrs, c.cstamt,
+      c.blgqty, c.blgamt, c.pieces, c.lgrrec, c.blgunt, c.eqptyp, c.eqpunt, c.eqpqty, c.grswge, c.ovrrde, c.blgttl,
+      c.active, c.acrinv, c.shwamt, c.ovhamt, c.pftamt, c.taxabl, c.usrnme, c.ntetxt,
+      c.rate01, c.rate02, c.rate03, c.minhrs,
+      case c.csttyp
+      when '1' then (1+cast(tr.mtrhdn as float)/100) * (1+cast(tr.mtrshw as float)/100) * (1+cast(tr.mtrovh as float)/100) * (1+cast(tr.mtrpft as float)/100)
+      when '2' then (1+cast(tr.labhdn as float)/100) * (1+cast(tr.labshw as float)/100) * (1+cast(tr.labovh as float)/100) * (1+cast(tr.labpft as float)/100)
+      when '3' then (1+cast(tr.eqphdn as float)/100) * (1+cast(tr.eqpshw as float)/100) * (1+cast(tr.eqpovh as float)/100) * (1+cast(tr.eqppft as float)/100)
+      when '4' then (1+cast(tr.subhdn as float)/100) * (1+cast(tr.subshw as float)/100) * (1+cast(tr.subovh as float)/100) * (1+cast(tr.subpft as float)/100)
+      when '5' then (1+cast(tr.otrhdn as float)/100) * (1+cast(tr.otrshw as float)/100) * (1+cast(tr.otrovh as float)/100) * (1+cast(tr.otrpft as float)/100)
+      when '6' then (1+cast(tr.cs6hdn as float)/100) * (1+cast(tr.cs6shw as float)/100) * (1+cast(tr.cs6ovh as float)/100) * (1+cast(tr.cs6pft as float)/100)
+      when '7' then (1+cast(tr.cs7hdn as float)/100) * (1+cast(tr.cs7shw as float)/100) * (1+cast(tr.cs7ovh as float)/100) * (1+cast(tr.cs7pft as float)/100)
+      when '8' then (1+cast(tr.cs8hdn as float)/100) * (1+cast(tr.cs8shw as float)/100) * (1+cast(tr.cs8ovh as float)/100) * (1+cast(tr.cs8pft as float)/100)
+      when '9' then (1+cast(tr.cs9hdn as float)/100) * (1+cast(tr.cs9shw as float)/100) * (1+cast(tr.cs9ovh as float)/100) * (1+cast(tr.cs9pft as float)/100)
+      end,
+      c.estbilling, c.emptbl, c.eqptbl, c.eqptype
+      from costs c
+      left outer join tmrates tr
+    </costs_update5>
+
+    <costsummary report="yes" dependancies="costs_update5">
+    <![CDATA[
+            SELECT jobnum, 
+                SUM(case when bllsts=1 then estbilling else 0 end) as bill01, 
+                SUM(case when bllsts=1 then cstamt else 0 end) as cost01, 
+                SUM(case when bllsts=4 then cstamt else 0 end) as nobill01, 
+                SUM(case when bllsts=1 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then estbilling else 0 end) as bill01cp, 
+                SUM(case when bllsts=1 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then cstamt else 0 end) as cost01cp, 
+                SUM(case when bllsts=4 AND (actprd >= {input:startperiod} and actprd <= {input:endperiod}) then cstamt else 0 end) as nobill01cp, 
+                SUM(case when bllsts=2 then estbilling else 0 end) as bill02, 
+                SUM(case when bllsts=2 then cstamt else 0 end) as cost02, 
+                SUM(case when bllsts=3 then estbilling else 0 end) as bill03, 
+                SUM(case when bllsts=3 then cstamt else 0 end) as cost03, 
+                SUM(estbilling) as estbilling, 
+                SUM(cstamt) as cstamt, '{input:tmtable}' as tmtable,
+                sum(case when bllsts=3 then 1 else 0 end) as count03, 
+                sum(case when acrinv > 0 then  1 else 0 end) as count03ar, 
+                SUM(case when bllsts=1 then csthrs else 0 end) as hours01, 
+                SUM(case when bllsts=2 then csthrs else 0 end) as hours02, 
+                SUM(case when bllsts=3 then csthrs else 0 end) as hours03, 
+                SUM(case when bllsts=3 then blgqty else 0 end) as hours03b, 
+                SUM(case when bllsts=4 then csthrs else 0 end) as hours04 
+                FROM costs GROUP BY jobnum
+    ]]>
+    </costsummary>
+
+    
+  </sql>
+  <debug>True</debug>
+  <logfile>log.txt</logfile>
+  <sqlitefile>test.db</sqlitefile>
+</configuration>

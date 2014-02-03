@@ -1,0 +1,119 @@
+<configuration>
+  <product_id>178504</product_id>
+  <product_version>1.0.0.0</product_version>
+  <run_count>145</run_count>
+  <datadir>Q:\MB7\APS MB 17\</datadir>
+  <dataset131043001034123075004130046064172055107178248095>
+    <debug>True</debug>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <ExportUnbilledOnly>False</ExportUnbilledOnly>
+    <last_login_username>Supervisor</last_login_username>
+  </dataset131043001034123075004130046064172055107178248095>
+  <dataset143183248025231234114216020135203218042181246150>
+    <debug>True</debug>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\bin\Debug\T&amp;M Job Detail Analysis Template v06.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+  </dataset143183248025231234114216020135203218042181246150>
+  <dataset127139139099199161061099027001160024087236066247>
+    <debug>True</debug>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\T&amp;M Job Detail Analysis Template v07.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+  </dataset127139139099199161061099027001160024087236066247>
+  <dataset061162012036245232011151147220199063023252132103>
+    <debug>True</debug>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <NewJobcostSource>31</NewJobcostSource>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\T&amp;M Job Detail Analysis Template v07.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+    <mjselect_chkStatus1>False</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>False</mjselect_chkStatus3>
+    <mjselect_chkStatus4>False</mjselect_chkStatus4>
+    <mjselect_chkStatus5>True</mjselect_chkStatus5>
+    <mjselect_chkStatus6>True</mjselect_chkStatus6>
+    <ExportUnbilledOnly>False</ExportUnbilledOnly>
+  </dataset061162012036245232011151147220199063023252132103>
+  <dataset040113036189223200208116245106213254246070238011>
+    <endperiod>9</endperiod>
+    <startperiod>9</startperiod>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\T&amp;M Job Detail Analysis Template v07.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+    <mjselect_chkStatus1>False</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>False</mjselect_chkStatus3>
+    <mjselect_chkStatus4>True</mjselect_chkStatus4>
+    <mjselect_chkStatus5>False</mjselect_chkStatus5>
+    <mjselect_chkStatus6>False</mjselect_chkStatus6>
+    <ExportUnbilledOnly>True</ExportUnbilledOnly>
+  </dataset040113036189223200208116245106213254246070238011>
+  <mbdir>
+  </mbdir>
+  <dataset045079186081134151102031008104179040115245228176>
+    <last_login_username>SUPERVISOR</last_login_username>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <ExportUnbilledOnly>False</ExportUnbilledOnly>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\T&amp;M Job Detail Analysis Template v08.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+    <mjselect_chkStatus1>False</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>False</mjselect_chkStatus3>
+    <mjselect_chkStatus4>True</mjselect_chkStatus4>
+    <mjselect_chkStatus5>True</mjselect_chkStatus5>
+    <mjselect_chkStatus6>False</mjselect_chkStatus6>
+    <NewJobcostSource>31</NewJobcostSource>
+    <DebugLicense>False</DebugLicense>
+    <DebugTmpPath>False</DebugTmpPath>
+    <debug>True</debug>
+  </dataset045079186081134151102031008104179040115245228176>
+  <dataset186198226214245211109121100038243223148038098144>
+    <last_login_username>SUPERVISOR</last_login_username>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <ExportUnbilledOnly>True</ExportUnbilledOnly>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\bin\Debug\T&amp;M Job Detail Analysis Template v07.xlsm</template>
+    <TempFileDirectory>C:\Users\bniemczyk.SYSCON-INC\AppData\Local\Temp\</TempFileDirectory>
+    <mjselect_chkStatus1>True</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>True</mjselect_chkStatus3>
+    <mjselect_chkStatus4>True</mjselect_chkStatus4>
+    <mjselect_chkStatus5>True</mjselect_chkStatus5>
+    <mjselect_chkStatus6>True</mjselect_chkStatus6>
+  </dataset186198226214245211109121100038243223148038098144>
+  <dataset061002124036093016032021124149159199002145175224>
+    <last_login_username>SUPERVISOR</last_login_username>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <ExportUnbilledOnly>False</ExportUnbilledOnly>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\T&amp;M Job Detail Analysis Template v08.xlsm</template>
+    <mjselect_chkStatus1>False</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>False</mjselect_chkStatus3>
+    <mjselect_chkStatus4>True</mjselect_chkStatus4>
+    <mjselect_chkStatus5>True</mjselect_chkStatus5>
+    <mjselect_chkStatus6>False</mjselect_chkStatus6>
+    <debug>True</debug>
+  </dataset061002124036093016032021124149159199002145175224>
+  <dataset049099194046092064143145059068239200235060052194>
+    <last_login_username>SUPERVISOR</last_login_username>
+    <endperiod>12</endperiod>
+    <startperiod>0</startperiod>
+    <ExportUnbilledOnly>False</ExportUnbilledOnly>
+    <template>C:\!dev\2165 SMB T&amp;M Job Detail Analysis\JobDetailAnalysisDesktop\bin\Debug\\T&amp;M Job Detail Analysis Template v08.xlsm</template>
+    <DebugTmpPath>False</DebugTmpPath>
+    <debug>True</debug>
+    <mjselect_chkStatus1>True</mjselect_chkStatus1>
+    <mjselect_chkStatus2>False</mjselect_chkStatus2>
+    <mjselect_chkStatus3>True</mjselect_chkStatus3>
+    <mjselect_chkStatus4>True</mjselect_chkStatus4>
+    <mjselect_chkStatus5>True</mjselect_chkStatus5>
+    <mjselect_chkStatus6>True</mjselect_chkStatus6>
+    <DebugLicense>False</DebugLicense>
+  </dataset049099194046092064143145059068239200235060052194>
+</configuration>

@@ -1,0 +1,25 @@
+update costs set estbilling = 
+case 
+    when rate01 is null or rate02 is null or rate03 is null then cast(cstamt as float)
+    when paytyp = '1' then cast(csthrs as float) * cast(rate01 as float)
+    when paytyp = '2' then cast(csthrs as float) * cast(rate02 as float)
+    when paytyp = '3' then cast(csthrs as float) * cast(rate03 as float)
+    else cstamt
+end
+where csttyp = '2' and cast(csthrs as float) != 0;
+
+update costs set estbilling =
+case
+    when rate01 is null or rate02 is null or rate03 is null then cast(cstamt as float)
+    when eqptyp = '1' then cast(eqpqty as float) * cast(rate01 as float)
+    when eqptyp = '2' then cast(eqpqty as float) * cast(rate02 as float)
+    when eqptyp = '3' then cast(eqpqty as float) * cast(rate03 as float)
+    else cstamt
+end
+where csttyp = 3 and cast(eqpqty as int) != 0;
+
+update costs set estbilling = blgttl where bllsts = '3';
+
+update costs set estbilling = 0 where bllsts = '2';
+
+update costs set estbilling = estbilling * markup;

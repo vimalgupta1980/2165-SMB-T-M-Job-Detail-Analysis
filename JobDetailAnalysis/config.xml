@@ -1,0 +1,5 @@
+<configuration>
+  <chkSumCustomer>False</chkSumCustomer>
+  <chkSumPeriod>False</chkSumPeriod>
+  <chkSumJob>False</chkSumJob>
+</configuration>

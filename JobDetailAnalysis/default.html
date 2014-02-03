@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <link href="css/custom-theme/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+
+  <style type="text/css">
+      table.layout
+      {
+          min-width: 200px;
+          border-collapse:collapse;
+      }
+      
+      td 
+      {
+          border-bottom: 2px solid #0000cc;
+          border-collapse:collapse;
+          padding: 10px 0px 10px 5px;
+          min-width: 200px;
+          vertical-align: top;
+      }
+      
+      input
+      {
+          margin-left: 10px;
+      }
+      
+      select
+      {
+          margin-left: 10px;
+      }
+  </style>
+
+  <script type="text/javascript">
+        // alert("Running script");
+      $(document).ready(function () {
+          // alert("document ready");
+          $("button").button();
+
+          $.ajax({ url: "Form/Form", dataType: "json",
+              beforeSend: function () { $("#spinner").show(); },
+              success: function (frmdef) {
+                  for (var i in frmdef) {
+                      if (frmdef[i].inputType == "Hidden")
+                          continue;
+
+                      $("#inputarea").append($("<tr id='tr" + i.toString() + "'>"))
+                      var tr = $("#tr" + i.toString());
+                      tr.append($("<td style='width:200px'>" + frmdef[i].caption + "</td>"))
+
+                      if (frmdef[i].inputType == "Choice" && frmdef[i].choices != null) {
+                          if (frmdef[i].choices.length >= 20) {
+                              tr.append("<td><input width='500px' name='" + frmdef[i].inputName + "' id='" + frmdef[i].inputName + "'></td>");
+                              var input = $("#" + frmdef[i].inputName);
+                              input.autocomplete({ source: frmdef[i].choices });
+                              input.width(500);
+                              input.val(frmdef[i].defaultValue);
+                          } else if (frmdef[i].choices.length <= 5) {
+                              tr.append("<td id='radio" + i.toString() + "'>");
+                              var td = $("#radio" + i.toString());
+                              for (var j in frmdef[i].choices) {
+                                  td.append("<input type='radio' value='" + frmdef[i].choices[j].value + "' name='" + frmdef[i].inputName + "'"
+                                  + (frmdef[i].choices[j].value == frmdef[i].defaultValue ? " checked" : "")
+                                  + ">" + frmdef[i].choices[j].value + "</input>");
+                              }
+                          } else {
+                              tr.append("<td><select id='combo" + i.toString() + "' name='" + frmdef[i].inputName + "'></td>");
+                              var combo = $("#combo" + i.toString());
+                              for (j in frmdef[i].choices) {
+                                  combo.append("<option value='" + frmdef[i].choices[j].value + "'"
+                                   + (frmdef[i].choices[j].value == frmdef[i].defaultValue ? " selected=1" : "")
+                                   + ">" + frmdef[i].choices[j].value + "</option>");
+                              }
+                          }
+                      } else if (frmdef[i].inputType == "MultiChoice" && frmdef[i].choices != null) {
+                          tr.append("<td id='checkbox" + i.toString() + "' />");
+                          td = $("#checkbox" + i.toString());
+                          for (j in frmdef[i].choices) {
+                              td.append("<input type='checkbox' name='" + frmdef[i].inputName + "' value='" + frmdef[i].choices[j].value + "' />" + frmdef[i].choices[j].value)
+                          }
+                      }
+                  }
+                  $("#spinner").hide();
+              },
+              error: function (req, errstr, ex) {
+                  $("#spinner").hide();
+                  alert(errstr);
+              }
+          });
+      });
+    </script>
+</head>
+
+<body style="margin:0px; padding=0px;">
+    <form method="get" action="Form/Submit">
+        <table style="width:100%" id="inputarea" class="layout"></table>
+        <br /><br />
+        <table>
+            <tr>
+                <td style="border-bottom:0px;"><input type="submit" style="margin:5px;" id="submitButton" /></td>
+                <td style="border-bottom:0px;"><img src="images/spinner.gif" id="spinner" style="" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

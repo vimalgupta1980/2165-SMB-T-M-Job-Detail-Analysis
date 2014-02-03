@@ -1,0 +1,7 @@
+tmpdata
+*.DBF
+*.dbf
+~*
+*.swp
+releases\superseded
+excel templates\superseded
