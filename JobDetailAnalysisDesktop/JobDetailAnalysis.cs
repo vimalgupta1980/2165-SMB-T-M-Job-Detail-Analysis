@@ -133,7 +133,7 @@ namespace JobDetailAnalysisDesktop
             Env.SetConfigVar("product_id", 178504);
             
             var product_id = Env.GetConfigVar("product_id", 0, false);
-            var product_version = "2.1.2.0";
+            var product_version = "2.1.3.0";
             bool require_login = false;
 
             if (!loaded)
@@ -291,7 +291,7 @@ namespace JobDetailAnalysisDesktop
                             + " from jobcst"
                             + " join actrec on jobcst.jobnum = actrec.recnum"
                             + " join reccln on reccln.recnum = actrec.clnnum"
-                            + " join employ estmtr on actrec.estemp = estmtr.recnum"
+                            + " left outer join employ estmtr on actrec.estemp = estmtr.recnum"
                             + " left join employ sprvsr on actrec.sprvsr = sprvsr.recnum"
                             + " left join cstcde on cstcde.recnum = jobcst.cstcde"
                             + " join {0} _jobnums on _jobnums.jobnum = jobcst.jobnum"
